@@ -76,4 +76,8 @@ Por otro lado, la función send empezaba con actualizar el dato que recibió de 
 Es un protocolo de comuniación de dos cables (SDA y SCL), el cual tiene la ventaja de conectar un master con varios slave. Para esto es necesario conectar dos resistencia de pull-up y tener en cuenta que entre más dispositivos se conecten aumenta la capacitancia y puede dejar de funcionar.
 
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/i2cc.jpg)
+
+El protocolo consiste en:
+* **Bit de start**
+
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/II2c.png)
