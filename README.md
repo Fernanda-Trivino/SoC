@@ -62,3 +62,11 @@ Estos módulos fueron anexados de los repositorios de Litex, a continuación se 
 Con el SoC sintetizando en Litex, se procede a generar el código en software. Este código tiene inicialmente una función para inicializar I2C, la cual resetea el módulo y le pone el tiempo de funcionamiento (frecuencia de 1kHz). En el main se pone primero la iniciación de la máscara, del UART y del I2C, luego, se usa un while infinito para utilizar el registro del configuración y escribirle al acelerómetro su dirección (0x53) más un bit de lectura o escritura, a continuación, se le escribe al registro de crl del acelerómetro (0x2D). Por último se escribe un 0x8 para configurar la medida de aceleración.
 
 Para probar que esto funcionara, se realizó un blinker usando el módulo de leds. Esto consistía en enviar un 0x0 y un 0xff para que prendieran y apagaran los leds, esto con un tiempo de espera de 3 segundos (para esto se usa el timer).
+
+### I2C.c
+
+Se generó un nuevo código que contiene las funciones del I2C, este consta de una función de escriyura y una función de enviado. 
+
+La función de escritura consiste en recibir dos datos, los cuales le envía a la función send con su respectivo comando de escritura, lectura y parada (el número de dichos comandos se encuentra en I2C.h), una vez termina de enviar los dos datos se sale de la función.
+
+Por otro lado, la función send empezaba con actualizar el dato que recibió de escritura. Luego, manda el dato que recibió de la misma función para activar el ciclo de enviado. Luego entra en un while que mantiene esperando al SoC hasta que el bit 2 del registro de status (TIP) se vuelva 0. Sin embargo, esta función presentó problemas, ya que el while usaba un and que inicialmente se puso en lógica (&&), pero se corrigió por comparación bit a bit (&).
