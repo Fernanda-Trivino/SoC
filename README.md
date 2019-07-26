@@ -15,5 +15,5 @@ de un acelerómetro ADXL345, y las imprimiera en el terminal. A su vez muestra e
 
 ## Descripción del acelerómetro ADXL345: 
 
-![](https://github.com/Fernanda-Trivino/SoC/tree/master/SoC_I2C/ima)
+![](https://github.com/Fernanda-Trivino/SoC/tree/master/SoC_I2C/ima/ADXL345.jpg)
 
