@@ -39,6 +39,10 @@ En la carpeta i2c_verilog se encontrarán los módulos de I2C, los cuales fueron
 
 Se decidió cambiar los reset a software, dado que se presentador varios problemas como fallos con TIP, no realizaba el cálculo de cambio de frecuencia y problemas de valores iniciales con algunos registros.
 
+![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/i2c.png)
+
 ### LEDS 
 
-El módulo leds consiste en un pinout implementado en el SoC.py, al cual desde software se le envía cómo debe prender y apagar por medio del Wishbone. Se debe aclarar que se usó una Nexys 4 (tener en cuanta a la hora de usar el código), por lo cual se pudieron usar 9 leds
+El módulo leds consiste en un pinout implementado en el SoC.py, al cual desde software se le envía cómo debe prender y apagar por medio del Wishbone. Se debe aclarar que se usó una Nexys 4 (tener en cuanta a la hora de usar el código), por lo cual se pudieron usar 9 leds.
+
+![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/leds.png)
