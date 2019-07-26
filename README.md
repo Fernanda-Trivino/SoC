@@ -48,3 +48,9 @@ Al final, luego de anexar el múdulo a Litex, se generó el siguiente mapa de me
 El módulo leds consiste en un pinout implementado en el SoC.py, al cual desde software se le envía cómo debe prender y apagar por medio del Wishbone. Se debe aclarar que se usó una Nexys 4 (tener en cuanta a la hora de usar el código), por lo cual se pudieron usar 9 leds.
 
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/leds.png)
+
+### Timer, UART y control
+
+![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/timer.png)
+![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/uart.png)
+![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/crl.png)
