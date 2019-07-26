@@ -1,0 +1,9 @@
+
+NET "I2C_clk"   LOC = "E3"	| IOSTANDARD ="LVCMOS33";
+#NET "cpu_reset"		LOC = "C12"	| IOSTANDARD = "LVCMOS33";
+#NET "tx"    LOC = "D4"  | IOSTANDARD ="LVCMOS33";
+#NET "rx"    LOC = "C4"  | IOSTANDARD ="LVCMOS33";
+NET "scl"    LOC = "B13"  | IOSTANDARD ="LVCMOS33";
+NET "sda"    LOC = "F14"  | IOSTANDARD ="LVCMOS33";
+NET "TIP"    LOC = "D17"  | IOSTANDARD ="LVCMOS33";
+

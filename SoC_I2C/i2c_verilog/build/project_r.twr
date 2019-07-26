@@ -1,0 +1,116 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -v 25 project_r.ncd
+project.pcf
+
+Design file:              project_r.ncd
+Physical constraint file: project.pcf
+Device,package,speed:     xc7a100t,csg324,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report, limited to 25 items per constraint
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock I2C_clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+I2C_rst     |   11.543(R)|      SLOW  |    3.523(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+command<0>  |   -1.136(R)|      FAST  |    4.700(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+command<3>  |   -0.193(R)|      FAST  |    3.088(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+command<4>  |   -1.148(R)|      FAST  |    4.712(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+command<5>  |   -1.131(R)|      FAST  |    4.695(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+command<6>  |   -1.139(R)|      FAST  |    4.703(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+command<7>  |   -1.181(R)|      FAST  |    4.745(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+control<7>  |   -1.147(R)|      FAST  |    4.711(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<0> |   -1.125(R)|      FAST  |    4.689(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<1> |   -1.157(R)|      FAST  |    4.720(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<2> |   -1.145(R)|      FAST  |    4.708(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<3> |   -1.146(R)|      FAST  |    4.709(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<4> |   -1.087(R)|      FAST  |    4.645(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<5> |   -1.099(R)|      FAST  |    4.661(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<6> |   -1.092(R)|      FAST  |    4.653(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<7> |   -1.096(R)|      FAST  |    4.658(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<8> |   -1.105(R)|      FAST  |    4.668(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<9> |   -1.098(R)|      FAST  |    4.658(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<10>|   -1.099(R)|      FAST  |    4.656(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<11>|   -1.159(R)|      FAST  |    4.722(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<12>|   -1.141(R)|      FAST  |    4.703(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<13>|   -1.111(R)|      FAST  |    4.669(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<14>|   -1.137(R)|      FAST  |    4.698(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+prescale<15>|   -1.099(R)|      FAST  |    4.659(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+rst_1       |    7.484(R)|      SLOW  |    2.459(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+scl         |    0.213(R)|      FAST  |    1.922(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+sda         |    0.312(R)|      FAST  |    1.686(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<0> |   -1.129(R)|      FAST  |    4.692(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<1> |   -1.101(R)|      FAST  |    4.665(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<2> |   -1.119(R)|      FAST  |    4.682(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<3> |   -1.111(R)|      FAST  |    4.676(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<4> |   -1.104(R)|      FAST  |    4.668(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<5> |   -1.110(R)|      FAST  |    4.674(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<6> |   -1.112(R)|      FAST  |    4.670(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+transmit<7> |   -1.111(R)|      FAST  |    4.667(R)|      SLOW  |I2C_clk_BUFGP     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock I2C_clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+receive<0>  |         8.419(R)|      SLOW  |         2.828(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+receive<1>  |         8.418(R)|      SLOW  |         2.826(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+receive<2>  |         8.425(R)|      SLOW  |         2.834(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+receive<3>  |         8.422(R)|      SLOW  |         2.831(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+receive<4>  |         8.420(R)|      SLOW  |         2.830(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+receive<5>  |         8.431(R)|      SLOW  |         2.836(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+receive<6>  |         8.445(R)|      SLOW  |         2.855(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+receive<7>  |         8.421(R)|      SLOW  |         2.831(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+scl         |         9.442(R)|      SLOW  |         2.633(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+sda         |         9.425(R)|      SLOW  |         2.617(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+status<0>   |         8.431(R)|      SLOW  |         2.833(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+status<5>   |         8.405(R)|      SLOW  |         2.811(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+status<6>   |         8.416(R)|      SLOW  |         2.822(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+status<7>   |         8.431(R)|      SLOW  |         2.835(R)|      FAST  |I2C_clk_BUFGP     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock I2C_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+I2C_clk        |    5.937|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Jul 25 19:29:51 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 767 MB
+
+
+

@@ -1,0 +1,7 @@
+INFILE=/home/ubuntu/Escritorio/github_ferney/lm32_SoC/SoC_litex/ejercicios/ejm07-i2c-verilog/build/gateware/top.ncd
+OUTFILE=/home/ubuntu/Escritorio/github_ferney/lm32_SoC/SoC_litex/ejercicios/ejm07-i2c-verilog/build/gateware/top.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/ubuntu/Escritorio/github_ferney/lm32_SoC/SoC_litex/ejercicios/ejm07-i2c-verilog/build/gateware
+LICENSE=WebPack
+USER_INFO=211573934_0_0_530

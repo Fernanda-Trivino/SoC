@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jul 25 19:29:18 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "I2C_clk" LOCATE = SITE "E3" LEVEL 1;
+COMP "sda" LOCATE = SITE "F14" LEVEL 1;
+COMP "TIP" LOCATE = SITE "D17" LEVEL 1;
+COMP "scl" LOCATE = SITE "B13" LEVEL 1;
+SCHEMATIC END;
+

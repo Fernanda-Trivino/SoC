@@ -1,0 +1,20 @@
+NET "user_led0" LOC=P2 | IOSTANDARD=LVCMOS33; # user_led:0
+NET "user_led1" LOC=R2 | IOSTANDARD=LVCMOS33; # user_led:1
+NET "user_led2" LOC=U1 | IOSTANDARD=LVCMOS33; # user_led:2
+NET "user_led3" LOC=P5 | IOSTANDARD=LVCMOS33; # user_led:3
+NET "user_led4" LOC=R1 | IOSTANDARD=LVCMOS33; # user_led:4
+NET "user_led5" LOC=V1 | IOSTANDARD=LVCMOS33; # user_led:5
+NET "user_led6" LOC=U3 | IOSTANDARD=LVCMOS33; # user_led:6
+NET "user_led7" LOC=V4 | IOSTANDARD=LVCMOS33; # user_led:7
+NET "user_led8" LOC=U6 | IOSTANDARD=LVCMOS33; # user_led:8
+NET "serial_tx" LOC=D4 | IOSTANDARD=LVCMOS33; # serial:0.tx
+NET "serial_rx" LOC=C4 | IOSTANDARD=LVCMOS33; # serial:0.rx
+NET "clk32" LOC=E3 | IOSTANDARD=LVCMOS33; # clk32:0
+NET "cpu_reset" LOC=C12 | IOSTANDARD=LVCMOS33; # cpu_reset:0
+NET "i2c_master_scl" LOC=B13 | IOSTANDARD=LVCMOS33; # i2c_master:0.scl
+NET "i2c_master_sda" LOC=F14 | IOSTANDARD=LVCMOS33; # i2c_master:0.sda
+NET "i2c_master_TIP" LOC=D17 | IOSTANDARD=LVCMOS33; # i2c_master:0.TIP
+
+
+NET "clk32" TNM_NET = "PRDclk32";
+TIMESPEC "TSclk32" = PERIOD "PRDclk32" 10 ns HIGH 50%;
