@@ -79,6 +79,11 @@ Es un protocolo de comuniación de dos cables (SDA y SCL), el cual tiene la vent
 
 El protocolo consiste en:
 * **Bit de start** El bit de start consiste en bajar sda de alto a bajo mientras scl esté en alto.
-* **Adress+W/R**
+* **Address+W/R** El address es el del esclavo (7 bits), el bit de w es cero y read es uno (1 bits).
+* **ACK** Espera a que que el esclavo baje la señal.
+* **R/W dato** Se envian o se leen los 8bits.
+* **Stop** El bit de stop consiste en subir sda a alto mientras scl esté en alto.
 
+En la siguiente imagen se muestra en el tiempo los pasos anteriormente explicados.
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/II2c.png)
+
