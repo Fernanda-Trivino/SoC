@@ -39,6 +39,8 @@ En la carpeta i2c_verilog se encontrarán los módulos de I2C, los cuales fueron
 
 Se decidió cambiar los reset a software, dado que se presentador varios problemas como fallos con TIP, no realizaba el cálculo de cambio de frecuencia y problemas de valores iniciales con algunos registros.
 
+Al final, luego de anexar el múdulo a Litex, se generó el siguiente mapa de memoria.
+
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/i2c.png)
 
 ### LEDS 
