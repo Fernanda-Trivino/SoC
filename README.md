@@ -51,6 +51,12 @@ El módulo leds consiste en un pinout implementado en el SoC.py, al cual desde s
 
 ### Timer, UART y control
 
+Estos módulos fueron anexados de los repositorios de Litex, a continuación se muestran los mapas de memoria correspondientes.
+
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/timer.png)
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/uart.png)
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/crl.png)
+
+## Firmware
+
+Con el SoC sintetizado en Litex, se procede a generar el código en software. Este código tiene inicialmente la iniciación de la máscara, del UART y del I2C, luego, se usa un while infinito para utilizar el registro del configuración y escribirle al acelerómetro su dirección (0x53) más un bit de lectura o escritura, a continuación, se le escribe al registro de crl del acelerómetro (0x2D). Por último se escribe un 0x8 para configurar la medida de aceleración.
