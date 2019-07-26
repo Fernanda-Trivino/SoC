@@ -59,4 +59,6 @@ Estos módulos fueron anexados de los repositorios de Litex, a continuación se 
 
 ## Firmware
 
-Con el SoC sintetizado en Litex, se procede a generar el código en software. Este código tiene inicialmente la iniciación de la máscara, del UART y del I2C, luego, se usa un while infinito para utilizar el registro del configuración y escribirle al acelerómetro su dirección (0x53) más un bit de lectura o escritura, a continuación, se le escribe al registro de crl del acelerómetro (0x2D). Por último se escribe un 0x8 para configurar la medida de aceleración.
+Con el SoC sintetizando en Litex, se procede a generar el código en software. Este código tiene inicialmente una función para inicializar I2C, la cual resetea el módulo y le pone el tiempo de funcionamiento (frecuencia de 1kHz). En el main se pone primero la iniciación de la máscara, del UART y del I2C, luego, se usa un while infinito para utilizar el registro del configuración y escribirle al acelerómetro su dirección (0x53) más un bit de lectura o escritura, a continuación, se le escribe al registro de crl del acelerómetro (0x2D). Por último se escribe un 0x8 para configurar la medida de aceleración.
+
+Para probar que esto funcionara, se realizó un blinker usando el módulo de leds. Esto consistía en enviar un 0x0 y un 0xff para que prendieran y apagaran los leds, esto con un tiempo de espera de 3 segundos (para esto se usa el timer).
