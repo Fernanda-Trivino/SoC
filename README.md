@@ -29,6 +29,10 @@ En la siguiente imagen se muestra el SoC.
 
 Este SoC está compuesto por un procesador LM32, un wishbone, un módulo led, un I2C, UART y timer. Los módulos timer, UART y leds están implemetados en Litex, mientras que I2C está implementado en Verilog. 
 
+Por último se presenta el mapa general de memoria en la siguiente imagen
+
+![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/mapa_gen.png)
+
 ### I2C Verilog
 
 En la carpeta i2c_verilog se encontrarán los módulos de I2C, los cuales fueron descargados de OpenCore. Fue necesario modificar el wishbone, con el fin de pasarlo de Verilog a Litex. Como también, se cambió el registro de status, ya que TIP no funcionaba de la manera deseado, por lo que se utilizó como transfering proccess el registro cnt_done, el cual indica cuando la tranferencia ha terminado. 
