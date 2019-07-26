@@ -69,4 +69,10 @@ Se generó un nuevo código que contiene las funciones del I2C, este consta de u
 
 La función de escritura consiste en recibir dos datos, los cuales le envía a la función send con su respectivo comando de escritura, lectura y parada (el número de dichos comandos se encuentra en I2C.h), una vez termina de enviar los dos datos se sale de la función.
 
-Por otro lado, la función send empezaba con actualizar el dato que recibió de escritura. Luego, manda el dato que recibió de la misma función para activar el ciclo de enviado. Luego entra en un while que mantiene esperando al SoC hasta que el bit 2 del registro de status (TIP) se vuelva 0. Sin embargo, esta función presentó problemas, ya que el while usaba un and que inicialmente se puso en lógica (&&), pero se corrigió por comparación bit a bit (&).
+Por otro lado, la función send empezaba con actualizar el dato que recibió de escritura. Luego, manda el dato que recibió de la misma función para activar el ciclo de enviado. Luego entra en un while que mantiene esperando al SoC hasta que el bit 2 del registro de status (TIP) se vuelva 0. Sin embargo, esta función presentó problemas, ya que el while usaba un and que inicialmente se puso en lógica (&&), pero se corrigió por comparación bit a bit (&). Posteriormente espera un ACK, el cual hace que la función de escritura vuelva a enviar el dato en caso de ACK ser igual a 1, de lo contrario continuar el proceso.
+
+## I2C
+
+Es un protocolo de comuniación de dos cables (SDA y SCL), el cual tiene la ventaja de conectar un master con varios slave. Para esto es necesario conectar dos resistencia de pull-up y tener en cuenta que entre más dispositivos se conecten aumenta la capacitancia y puede dejar de funcionar.
+
+
