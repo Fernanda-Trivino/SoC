@@ -78,6 +78,7 @@ Es un protocolo de comuniación de dos cables (SDA y SCL), el cual tiene la vent
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/i2cc.jpg)
 
 El protocolo consiste en:
-* **Bit de start**
+* **Bit de start** El bit de start consiste en bajar sda de alto a bajo mientras scl esté en alto.
+* **Adress+W/R**
 
 ![](https://github.com/Fernanda-Trivino/SoC/blob/master/SoC_I2C/ima/II2c.png)
